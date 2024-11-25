@@ -1,16 +1,3 @@
-<?php
-require_once 'config.php';
-
-// Fetch menu items grouped by category
-$sql = "SELECT * FROM menu_items ORDER BY category, name";
-$result = mysqli_query($conn, $sql);
-
-$menu_items = array();
-while($row = mysqli_fetch_assoc($result)) {
-    $menu_items[$row['category']][] = $row;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
