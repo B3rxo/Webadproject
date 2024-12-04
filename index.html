@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Beans Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./api/placeholder/100/istockphoto-1267682472-612x612.jpg" alt="Brew & Beans Logo">
+                <h1>Brew & Beans</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booking">Book a Table</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Brew & Beans</h2>
+                <p>Artisan Coffee & Warm Moments</p>
+                <a href="#booking" class="cta-button">Book a Table</a>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-grid" id="menuItems">
+                <!-- Menu items will be dynamically populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <h2>Book a Table</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Check Availability</button>
+            </form>
+            <div id="bookingResult"></div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Brew & Beans</h2>
+            <p>We are passionate about crafting the perfect cup of coffee and creating a warm, inviting atmosphere for our guests.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>📍 123 Coffee Lane, Brewtown</p>
+            <p>📞 (555) 123-4567</p>
+        </div>
+        <div class="social-links">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+        </div>
+        <p>&copy; 2024 Brew & Beans Coffee Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
